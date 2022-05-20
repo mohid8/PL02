@@ -22,7 +22,7 @@ namespace Rqim2Console
             //  rrqim.Save("test.rqim");
 
             //load file
-            //var rqim = Rqim.Load("..\\data\\rqim10.rqim");
+            var rqim_reference = Rqim.Load("..\\data\\rqim10.rqim");
 
             //save image
             //rqim.SaveImage("..\\images\\teszt35.png");
@@ -31,13 +31,13 @@ namespace Rqim2Console
             //var rqim2 = rqim.Translate2D(-0.5f, -0.5f);
 
             //Scale
-            //rqim2 = rqim.Scale2D(200);
+            rqim_reference = rqim_reference.Scale2D(640);
 
             //Save file 
             //rqim.Save("..\\data\\teszt35.rqim");
 
             //Detect
-            var irqm = RqimDetector.FromImage(@"..\images\rqim10.png");
+            var irqm = RqimDetector.FromImage(@"..\images\10_cam_11.png");
 
 
 
